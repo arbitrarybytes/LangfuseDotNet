@@ -4,6 +4,32 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Configuration -->
+    <PackageId>Langfuse</PackageId>
+    <Version>0.1.0</Version>
+    <Title>Langfuse .NET SDK</Title>
+    <Authors>Langfuse Contributors</Authors>
+    <Description>A .NET SDK for Langfuse - an open-source LLM engineering platform for tracing, prompt management, and evaluation of LLM applications.</Description>
+    <PackageProjectUrl>https://github.com/arbitrarybytes/LangfuseDotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arbitrarybytes/LangfuseDotNet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>langfuse;llm;tracing;observability;prompt-management;evaluation;ai</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+    <!-- NuGet Package Details -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
 
 </Project>
